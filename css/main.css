@@ -4,7 +4,7 @@ html {
 }
 
 header {
-  padding: 3em 0 0 0;
+  padding: 3em 0em 0em 0em;
   background-color: #2c3950;
   color: white;
 }
@@ -13,13 +13,13 @@ h1 {
   text-align: center;
   background-color: #1a2230;
   padding: .5em;
-  margin: 0;
+  margin: 0em;
   color:#fff;
 }
 
 body{
-  margin:0;
-  padding:0;
+  margin:0em;
+  padding:0em;
 }
 
 img {
@@ -29,4 +29,41 @@ img {
 div{
   width:320px;
   margin:0 auto;
+}
+
+.body{
+  width:320px;
+  display:block;
+}
+
+.brain{
+  width:46px;
+  position:absolute;
+  left:138px;
+  top:6px;
+  transition:all 250ms linear;
+}
+
+.left{
+  width:125px;
+  position:absolute;
+  left:36px;
+  top:-36px;
+  transition:all 250ms linear;
+}
+
+.right{
+  width:125px;
+  position:absolute;
+  left:34px;
+  top:-36px;
+  transition:all 250ms linear;
+}
+
+.robot:hover .left{
+  left:10px;
+}
+
+.robot:hover .right{
+  right:10px;
 }
