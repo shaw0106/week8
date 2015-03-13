@@ -3,6 +3,24 @@ html {
   font-family: 'Contrail One', cursive;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body{
+  margin:0;
+}
+
+header {
+  padding: 3em 0em 0em 0em;
+  background-color: #2c3950;
+  color: white;
+  position:relative;
+  text-align:center;
+  width: 360px;
+  width:100%;
+}
+
 h1 {
   text-align: center;
   background-color: #1a2230;
@@ -12,64 +30,52 @@ h1 {
   position:relative;
 }
 
-header {
-  padding: 3em 0em 0em 0em;
-  background-color: #2c3950;
-  color: white;
-}
-
-body{
-  margin:0em;
-  padding:0em;
-}
-
-img {
-  width:100%;
-}
-
-div{
-  width:320px;
-  margin:0 auto;
-}
-
 .robot {
   position:relative;
-  width:320;
+  width:320px;
   margin:0 auto;
-  padding-top:60px;
-  float:center;
+  padding:0;
 }
 
 .body {
   width:320px;
   display:block;
-  padding-top:2em;
-  position:relative;
-  bottom:0;
+  padding-top:40px;
 }
 
 .brain {
   width:46px;
-  position:relative;
-  left:138px;
-  top:6em;
+  position:absolute;
+  left:135px;
+  top:2.5em;
 }
 
 .left {
   width:125px;
-  position:relative;
+  position:absolute;
   left:36px;
-  top:-36px;
+  top:0;
 }
 
 .right {
   width:125px;
-  position:relative;
-  left:34px;
-  top:-36px;
+  position:absolute;
+  right:35px;
+  top:0;
 }
 
-.robot:hover .left{
+header:hover .left {
+  left:0.15em;
+  transition:all 250ms linear;
+}
+
+header:hover .right{
+  right:10px;
+  transition:all 250ms linear;
+}
+
+
+/*.robot:hover .left{
   left:10px;
   transition:all 250ms linear;
 }
@@ -78,7 +84,9 @@ div{
   right:10px;
   transition:all 250ms linear;
 }
+*/
 
-*, *::before, *::after {
-  box-sizing: inherit;
+header:hover .brain{
+  top:1.5em;
+  transition:all 200ms linear;
 }
